@@ -8,8 +8,8 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({ title, description, keywords }) => {
-  const siteUrl = window.location.origin;
-  const imageUrl = `${siteUrl}/assets/hero.jpg`;
+  const siteUrl = 'https://arthlor.github.io';
+  const imageUrl = `${siteUrl}${import.meta.env.BASE_URL}assets/hero.jpg`;
 
   const defaultTitle = 'Yargı Kıskacında Demokrasi';
   const defaultDescription = "19 Mart'ta başlayan ve CHP'li belediyeleri hedef alan siyasi operasyonların interaktif haritası, kronolojisi ve veri merkezi.";

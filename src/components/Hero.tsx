@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
       id="hero" 
       className="h-screen flex flex-col justify-center items-center text-white p-4"
       style={{ 
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/hero.jpg)`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${import.meta.env.BASE_URL}assets/hero.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'

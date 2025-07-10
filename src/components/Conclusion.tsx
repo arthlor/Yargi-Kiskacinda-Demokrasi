@@ -6,10 +6,6 @@ import { unparse } from 'papaparse';
 import { persons } from '../data/persons';
 import Contribution from './Contribution'; 
 
-const contributors = [
-  'Anıl Karaca',
-];
-
 const Conclusion: React.FC = () => {
   const [copied, setCopied] = useState(false);
 
@@ -85,17 +81,6 @@ const Conclusion: React.FC = () => {
         </div>
 
         <Contribution />
-
-        <div>
-          <h3 className="text-xl font-bold text-gray-400 mb-4">Katkıda Bulunanlar</h3>
-          <div className="flex justify-center items-center gap-x-6 gap-y-2 flex-wrap">
-            {contributors.map((name, index) => (
-              <span key={index} className="text-gray-500 text-sm">
-                {name}
-              </span>
-            ))}
-          </div>
-        </div>
 
       </div>
     </section>

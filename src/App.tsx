@@ -7,6 +7,7 @@ import AnalysisSection from './components/AnalysisSection';
 import { persons } from './data/persons';
 import type { Person } from './types';
 import SEO from './components/SEO';
+import Footer from './components/Footer';
 
 function App() {
   const [nameFilter, setNameFilter] = useState<string>('');
@@ -47,6 +48,7 @@ function App() {
         <AnalysisSection data={persons} />
         <Conclusion />
       </main>
+      <Footer />
     </div>
   );
 }
