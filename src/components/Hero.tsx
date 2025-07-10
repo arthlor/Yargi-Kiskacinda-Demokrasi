@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
     >
       <div className="container mx-auto px-4 z-10 text-center">
         <motion.h1 
-          className="text-5xl md:text-7xl font-extrabold mb-4 text-center font-serif"
+          className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 text-center font-serif"
           style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.7)' }}
           initial="hidden"
           animate="visible"
@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
           ))}
         </motion.h1>
         <motion.p 
-          className="text-xl md:text-2xl text-gray-300 mt-4 mb-12"
+          className="text-lg sm:text-xl md:text-2xl text-gray-300 mt-4 mb-8"
           style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.6)' }}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -91,17 +91,17 @@ const Hero: React.FC = () => {
         </motion.p>
         
         <motion.div 
-          className="flex gap-4 md:gap-8 flex-wrap justify-center"
+          className="flex gap-2 sm:gap-4 md:gap-8 flex-wrap justify-center"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.2 }}
         >
           {statItems.map((item, index) => (
-            <div key={index} className="bg-black bg-opacity-40 backdrop-blur-sm py-6 px-8 rounded-lg border border-border-color min-w-[150px]">
-              <div className={`text-5xl font-black ${item.color}`}>
+            <div key={index} className="bg-black bg-opacity-40 backdrop-blur-sm py-4 px-3 sm:py-6 sm:px-8 rounded-lg border border-border-color min-w-[140px] flex-1">
+              <div className={`text-4xl sm:text-5xl font-black ${item.color}`}>
                 <AnimatedCounter value={item.value} />
               </div>
-              <div className="text-sm text-gray-400 mt-2">{item.label}</div>
+              <div className="text-xs sm:text-sm text-gray-400 mt-2">{item.label}</div>
             </div>
           ))}
         </motion.div>
