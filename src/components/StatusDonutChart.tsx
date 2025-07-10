@@ -77,7 +77,7 @@ const StatusDonutChart: React.FC<StatusDonutChartProps> = ({ data }) => {
             onMouseEnter={onPieEnter}
             onMouseLeave={onPieLeave}
           >
-            {chartData.map((entry, index) => (
+            {chartData.map((_, index) => (
               <Cell 
                 key={`cell-${index}`} 
                 fill={COLORS[index % COLORS.length]} 
